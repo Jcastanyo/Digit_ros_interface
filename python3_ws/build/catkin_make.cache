@@ -1,0 +1,2 @@
+digit_interface:main_code
+-DPYTHON_EXECUTABLE:FILEPATH=/home/julio/Escritorio/julio/doctorado/primer_anyo/digit/ros/python3_ws/py3env/bin/python -DCATKIN_DEVEL_PREFIX=/home/julio/Escritorio/julio/doctorado/primer_anyo/digit/ros/python3_ws/devel -DCMAKE_INSTALL_PREFIX=/home/julio/Escritorio/julio/doctorado/primer_anyo/digit/ros/python3_ws/install -G Unix Makefiles

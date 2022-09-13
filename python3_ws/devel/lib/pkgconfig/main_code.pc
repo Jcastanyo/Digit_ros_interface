@@ -1,0 +1,8 @@
+prefix=/home/julio/Escritorio/julio/doctorado/primer_anyo/digit/ros/python3_ws/devel
+
+Name: main_code
+Description: Description of main_code
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

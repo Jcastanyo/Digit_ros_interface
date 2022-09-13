@@ -1,0 +1,7 @@
+<launch>
+    <!-- define sensor id parameter -->
+    <param name="sensor_id" type="str" value="D00055" />
+    <!-- call digit node to start getting images from the sensor-->
+    <node pkg="digit_interface" type="digit.py" name="digit" output="screen" />
+
+</launch>
