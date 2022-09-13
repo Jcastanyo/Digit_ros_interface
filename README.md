@@ -5,3 +5,4 @@ DIGITs are a type of tactile sensors designed by Meta. This type of sensor is lo
 
 These sensors works with a library in python3, so I wanted to create a ros workspace compiled with python3 to include these sensors with the rest of our mobile manipulator robot.
 
+In this repository you will find two main files/folders. The odt file contains instructions to create the ros workspace and compiled it for python3. The python3_ws folder is the catkin workspace where you will find two main packages: digit_interface and main_code. In digit_interface package I carried out a simple code to read images from the sensors and publish them in a ros topic. The main code package only contains a simple subscriber to evaluate that the digit sensor interface is working. I tested this workspace with ubuntu 20 and ros noetic and it works perfect. 
