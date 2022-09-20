@@ -13,11 +13,20 @@ In this repository you will find two main files/folders. The odt file contains i
 source py3env/bin/activate
 ```
 # ROS commands
-## source devel/setup.bash
-## roslaunch digit_interface digit.launch
-## python read_from_digit.py (in src/main_code/scripts/)
-
+```sh 
+source devel/setup.bash
+```
+```sh 
+roslaunch digit_interface digit.launch
+```
+```sh 
+python read_from_digit.py (in src/main_code/scripts/)
+```
 # To record a rosbag
-## rosbag record -O name_file /digit/camera/image_color
+```sh 
+rosbag record -O name_file /digit/camera/image_color
+```
 # To play the rosbag in a loop
-## rosbag play -l name_file.bag
+```sh 
+rosbag play -l name_file.bag
+```
