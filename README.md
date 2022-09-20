@@ -13,12 +13,14 @@ In this repository you will find two main files/folders. The odt file contains i
 source py3env/bin/activate
 ```
 # ROS commands
+###### terminal 1
 ```sh 
 source devel/setup.bash
 ```
 ```sh 
 roslaunch digit_interface digit.launch
 ```
+###### terminal 2
 ```sh 
 cd src/main_code/scripts/
 ```
