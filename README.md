@@ -9,7 +9,9 @@ In this repository you will find two main files/folders. The odt file contains i
 
 # Commands
 # To activate the python3 virtualenv
+'''sh
 source py3env/bin/activate
+'''
 # ROS commands
 source devel/setup.bash
 roslaunch digit_interface digit.launch
