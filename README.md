@@ -20,7 +20,10 @@ source devel/setup.bash
 roslaunch digit_interface digit.launch
 ```
 ```sh 
-python read_from_digit.py (in src/main_code/scripts/)
+cd src/main_code/scripts/
+```
+```sh 
+python read_from_digit.py
 ```
 # To record a rosbag
 ```sh 
