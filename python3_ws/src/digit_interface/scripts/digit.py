@@ -6,6 +6,7 @@
 import rospy
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
+import time
 
 # DIGIT LIBRARY
 from digit_interface import Digit
@@ -57,8 +58,20 @@ def main():
         # get image from the sensor
         digit_img = digit_sensor.get_frame()
 
+        # create the ros msg for the images and fill with all the info
+        image_msg = Image()
+        image_msg.header.stamp = rospy.Time.from_sec(time.time())
+        image_msg.header.frame_id = "digit_camera"
+        image_msg.height = (digit_img.shape)[0]
+        image_msg.width = (digit_img.shape)[1]
+        image_msg.step = digit_img.strides[0]
+        image_msg.data = digit_img.flatten().tolist()
+        image_msg.encoding = "bgr8"
+
+
         # transform to ros type and publish img
-        pub.publish(cvbridge.cv2_to_imgmsg(digit_img))
+        #pub.publish(cvbridge.cv2_to_imgmsg(digit_img))
+        pub.publish(image_msg)
         # 100 hz rate of publication
         rospy.Rate(100)
 

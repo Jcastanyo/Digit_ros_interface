@@ -14,8 +14,7 @@ cvbridge = CvBridge()
 
 def callback(msg):
     global image
-    #print(msg)
-    image = cvbridge.imgmsg_to_cv2(msg)
+    image = cvbridge.imgmsg_to_cv2(msg, "bgr8")
 
 
 def main():
